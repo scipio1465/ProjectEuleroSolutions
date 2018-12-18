@@ -31,4 +31,4 @@ range_digits = [[i for i in range(1,10)]]*3
 [ print('{}{}/{}{} = {}/{}'.format(x,y,y,z,x,z)) for (x,y,z) in itertools.product(*range_digits) if ((10*x + y)*z == (10*y+z)*x and x<z)] 
 
 #this is the end
-print ("\nSolved in {}s".format(time.time()-t))
+print ("\nSolved in {:.2f} ms".format(1000*(time.time()-t)))
